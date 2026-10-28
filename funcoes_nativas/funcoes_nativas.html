@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário das funções nativas do PHP</title>
+    <style>
+        header{
+            text-align: center;
+            padding: 28px 20px 10px;
+        }
+        main{
+            display: flex;
+            justify-content: center;
+            padding: 30px 20px 10px;
+        }
+        body{
+            font-family: 'Arial';
+        }
+        section{
+            width: 200px;
+            background: #fff;
+            padding: 28px 22px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 18px rgb(0, 0, 0);
+        }
+        input, button {
+            width: 100%;
+            padding: 4px 6px;
+            border-radius: 8px;
+            border: 1px solid #d0d0d0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulário das funções nativas do PHP</h1>
+    </header>
+    <main>
+        <section>
+            <h3>Potência</h3>
+            <form action="potencia.php" method="post">
+                <label for="n">Escolha um número para calcular sua potência de 2</label><br>
+                <input type="text" name="n" required placeholder="Digite um número"><br>
+                <button>Calcular</button>
+            </form>
+        </section>
+        <section>
+            <h3>Raiz quadrada</h3>  
+            <form action="raiz_quadrada.php" method="post">
+                <label for="n">Escolha um número para calcular sua raiz quadrada</label><br>
+                <input type="text" name="n" required placeholder="Digite um número"><br>
+                <button>Calcular</button>
+            </form>
+        </section>
+        <section>
+            <h3>Maior ou menor</h3>
+            <form action="maior_menor.php" method="post">
+                <label for="a">Número 1:</label><br>
+                <input type="text" name="a" placeholder="Digite o primeiro número" required><br>
+                <label for="b">Número 2:</label><br>
+                <input type="text" name="b" placeholder="Digite o segundo número" required><br>
+                <label for="c">Número 3:</label><br>
+                <input type="text" name="c" placeholder="Digite o terceiro número" required><br>
+                <label for="d">Número 4:</label><br>
+                <input type="text" name="d" placeholder="Digite o quarto número" required><br>
+                <label for="e">Número 1:</label><br>
+                <input type="text" name="e" placeholder="Digite o quinto número" required><br>
+                <button>Verificar</button>
+            </form>
+        </section>
+        <section>
+            <h3>Valor Absoluto</h3>
+            <form action="valor_absoluto.php" method="post">
+                <label for="n">Escolha um número para calcular seu valor absoluto</label><br>
+                <input type="text" name="n" placeholder="Digite um número" required><br>
+                <button>Calcular</button>
+            </form>
+        </section>
+        <section>
+            <h3>Arredondamento</h3>
+            <form action="arredondamento.php" method="post">
+                <label for="n">Escolha um número para calcular seu valor arredondado</label><br>
+                <input type="text" name="n" placeholder="Digite um número" required><br>
+                <button>Calcular</button>
+            </form>
+        </section>
+        <section>
+            <h3>Número Aleatório</h3>
+            <form action="numero_aleatorio.php" method="post">
+                <label for="n1">Escolha um número de começo</label><br>
+                <input type="text" name="n1" placeholder="Digite um número de começo" required><br>
+                <label for="n2">Escolha um número de limiter</label><br>
+                <input type="text" name="n2" placeholder="Digite um número de começo" required><br>
+                <button>Sortear</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
